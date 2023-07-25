@@ -15,10 +15,7 @@ const userSchema = new Schema(
       required: true,
       match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,"Please Use a Valid Email"]
     },
-    startDate: {
-      type: Date,
-      default: Date.now(),
-    },
+   
     thoughts: [
       {
         type: Schema.Types.ObjectId,
